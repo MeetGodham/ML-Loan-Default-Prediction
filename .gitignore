@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+.pnp
+.pnp.js
+
+# Python Virtual Environments
+venv/
+backend/venv/
+env/
+.env.local
+.env.*.local
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Next.js Build Outputs
+.next/
+frontend/.next/
+out/
+build/
+dist/
+
+# Notebook checkpoints & temp files
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+model/.ipynb_checkpoints/
+model/anaconda_projects/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Ensure the trained production model is tracked for deployment
+!backend/app/model/loan_default_model.pkl
