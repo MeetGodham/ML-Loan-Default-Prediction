@@ -40,7 +40,7 @@ This concurrently starts:
 ### Option 2: Using the Windows Batch Launcher
 Double-click or run from command prompt:
 ```cmd
-start-dev.bat
+start-dev.bat 
 ```
 
 ---
