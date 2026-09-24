@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: loan-default-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: MODEL_PATH
+        value: app/model/loan_default_model.pkl
+    healthCheckPath: /health
